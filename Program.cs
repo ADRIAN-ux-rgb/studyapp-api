@@ -6,6 +6,8 @@ builder.Services.AddControllers();
 // 🔥 Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddControllers();
+
 
 var app = builder.Build();
 
@@ -21,6 +23,7 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 // 🔥 MAPEAR CONTROLLERS
+app.MapControllers();
 app.MapControllers();
 
 app.Run();

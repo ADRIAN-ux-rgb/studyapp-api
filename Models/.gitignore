@@ -1,0 +1,7 @@
+
+# build do .NET
+bin/
+obj/
+
+# configs locais (não subir senha)
+appsettings.Development.json
